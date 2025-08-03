@@ -1,0 +1,11 @@
+pkg load image;
+i=imread('tree3.jpg');
+j=imread('tree8.jpg');
+k=imadd(i,j);
+figure;imshow(i);title('input image1');
+figure;imshow(j);title('input image2');
+figure;imshow(k);title('output image');
+figure;
+subplot(2,2,1);imshow(i);
+subplot(2,2,2);imshow(j);
+subplot(2,2,3);imshow(k);
